@@ -1,6 +1,6 @@
 # Emotion Classifier 💬
 
-A deployment-ready **Natural Language Processing (NLP)** app that classifies emotions from text input using machine learning. Built with a full pipeline of tools including **NLTK** for advanced preprocessing, **scikit-learn** for modeling, and **Gradio** for a clean, interactive user interface.
+A **Natural Language Processing (NLP)** app that classifies emotions from text input using machine learning. Built with a full pipeline of tools including **NLTK** for advanced preprocessing, **scikit-learn** for modeling, and **Gradio** for a clean, interactive user interface.
 
 ---
 
@@ -58,5 +58,10 @@ The model shows strong predictive performance across most categories, with the b
 | I love you                                 | Love              |
 | i honestly am not sure how i feel stunned  | Surprise          |
 
+---
+## 🖼️ Output Screenshots
+
+### Web Interface
+![Web Interface](screenshots/web_ui.png)
 
 
