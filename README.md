@@ -25,9 +25,12 @@ All development and testing were done in **Google Colab**.
 To explore or modify the code:
 - Open the included `.ipynb` notebook
 - Run all cells directly in Colab
-- You can export the model (`model.pkl`) and run the `app.py` locally if desired
+- You can export the model (`model.pkl`) if desired
 
 Alternatively, fork the repo and connect to [Google Colab](https://colab.research.google.com/) via GitHub.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/athulyas1206/emotion-classifier-in-text/blob/main/Emotion_detection_in_text.ipynb)
+
 
 ---
 
@@ -62,6 +65,6 @@ The model shows strong predictive performance across most categories, with the b
 ## 🖼️ Output Screenshots
 
 ### Web Interface
-![Web Interface](screenshots/web_ui.png)
+![Web Interface](Screenshot.png)
 
 
