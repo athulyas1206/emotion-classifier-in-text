@@ -11,9 +11,9 @@ A deployment-ready **Natural Language Processing (NLP)** app that classifies emo
 - Preprocessing with NLTK:
   - Tokenization
   - Stopword removal
-  - Stemming
   - Lemmatization
 - Deployed with Gradio for instant web-based interaction
+- Final accuracy: **88.5%** on test data
 - Confusion matrix visualization included
 
 ---
@@ -25,32 +25,38 @@ All development and testing were done in **Google Colab**.
 To explore or modify the code:
 - Open the included `.ipynb` notebook
 - Run all cells directly in Colab
+- You can export the model (`model.pkl`) and run the `app.py` locally if desired
 
+Alternatively, fork the repo and connect to [Google Colab](https://colab.research.google.com/) via GitHub.
 
 ---
 
 ## 📊 Model Overview
 
-- **Model**: Logistic Regression
-- **Vectorizer**: TF-IDF with max 5000 features
-- **Accuracy**: ~90% on test data
+- **Model**: Logistic Regression 
+- **Vectorizer**: TF-IDF with bigrams (`ngram_range=(1,2)`)
+- **Accuracy**: **88.5%** on the test set from the Kaggle Emotion Dataset
+- **Training Data**: Combined `train.txt` and `val.txt`
+- **Class Balancing**: Applied using `class_weight='balanced'`
 
 ### Confusion Matrix
 
 ![Confusion Matrix](confusion_matrix.png)
 
-The model shows high precision and recall across most classes, with expected confusion between closely related emotions (e.g., *Joy* vs *Love*, *Fear* vs *Surprise*).
+The model shows strong predictive performance across most categories, with the best performance in "Joy" and "Sadness". Some class confusion remains for "Surprise" and "Love" due to data imbalance, but these were mitigated through class weighting and tuning.
 
 ---
 
-## 🧾 Example Predictions
+## 🔢 Example Predictions
 
-| Input Sentence                     | Predicted Emotion |
-|-----------------------------------|-------------------|
-| I love this place                 | Joy               |
-| I saw a dead body                 | Fear              |
-| This makes me so angry           | Anger             |
-| I miss my best friend            | Sadness           |
-| You surprised me with that gift  | Surprise          |
+| Input Sentence                             | Predicted Emotion |
+|--------------------------------------------|-------------------|
+| That was the best birthday surprise ever.  | Joy               |
+| I am nervous                               | Fear              |
+| Stop pretending like you care              | Anger             |
+| Why does this always happen to me?         | Sadness           |
+| I love you                                 | Love              |
+| i honestly am not sure how i feel stunned  | Surprise          |
+
 
 
