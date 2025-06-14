@@ -28,6 +28,7 @@ To explore or modify the code:
 - You can export the model (`model.pkl`) if desired
 
 You can also launch the notebook directly in Google Colab using the link below — no setup required.
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/athulyas1206/emotion-classifier-in-text/blob/main/Emotion_detection_in_text.ipynb)
 
 ---
