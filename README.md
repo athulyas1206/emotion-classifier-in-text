@@ -1,10 +1,10 @@
-# Emotion Classifier 💬
+# Emotion Classifier 
 
 A **Natural Language Processing (NLP)** app that classifies emotions from text input using machine learning. Built with a full pipeline of tools including **NLTK** for advanced preprocessing, **scikit-learn** for modeling, and **Gradio** for a clean, interactive user interface.
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Predicts one of six emotions: **Joy**, **Sadness**, **Anger**, **Fear**, **Love**, **Surprise**
 - Built using a TF-IDF vectorizer + Logistic Regression model
@@ -18,7 +18,7 @@ A **Natural Language Processing (NLP)** app that classifies emotions from text i
 
 ---
 
-## 📊 How to Use This Project
+##  How to Use This Project
 
 All development and testing were done in **Google Colab**.
 
@@ -33,7 +33,7 @@ You can also launch the notebook directly in Google Colab using the link below �
 
 ---
 
-## 📊 Model Overview
+##  Model Overview
 
 - **Model**: Logistic Regression 
 - **Vectorizer**: TF-IDF with bigrams (`ngram_range=(1,2)`)
@@ -49,7 +49,7 @@ The model shows strong predictive performance across most categories, with the b
 
 ---
 
-## 🔢 Example Predictions
+##  Example Predictions
 
 | Input Sentence                             | Predicted Emotion |
 |--------------------------------------------|-------------------|
@@ -61,7 +61,7 @@ The model shows strong predictive performance across most categories, with the b
 | i honestly am not sure how i feel stunned  | Surprise          |
 
 ---
-## 🖼️ Output Screenshots
+##  Output Screenshots
 
 ### Web Interface
 ![Web Interface](Screenshot.png)
